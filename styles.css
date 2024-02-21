@@ -1,0 +1,27 @@
+.background-hero{
+    
+}
+
+body{
+    font-family: montserrat;
+    .box{
+        width: 500px;
+        height: 66px;
+    }
+    
+    
+}
+h1{
+    color: rgb(188, 168, 168);
+    .box{
+        width: 500px;   
+        height: 66px;
+    }
+}
+
+.span{
+    width: 300px;
+    height: 18px;
+    display: inline-block;
+    
+}
