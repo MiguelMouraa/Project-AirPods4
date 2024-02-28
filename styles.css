@@ -1,27 +1,154 @@
-.background-hero{
-    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url("assets/images/background-hero.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 385px;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #30312b;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 33px;
+    margin-bottom: 30px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+body, html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+.botaocontainer {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 330px;
+  top: 450px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #c7cbac;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #bdbe99;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: black;
     font-family: montserrat;
-    .box{
-        width: 500px;
-        height: 66px;
-    }
-    
-    
+    font-size: 20px;
 }
-h1{
-    color: rgb(188, 168, 168);
-    .box{
-        width: 500px;   
-        height: 66px;
-    }
+body {
+    overflow-y: auto;
 }
-
-.span{
-    width: 300px;
-    height: 18px;
-    display: inline-block;
-    
+.page2{
+    background-image: url("./assets/images/Page2.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 600px;
+}
+.page3 {
+    background-image: url("./assets/images/Page3.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 450px;
 }
