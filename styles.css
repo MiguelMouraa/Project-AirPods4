@@ -152,3 +152,7 @@ body {
     text-align: center;
     padding: 450px;
 }
+.titulo-centralizado {
+  text-align: center;
+  margin-top: 20px; /* Ajuste o valor de margem conforme necessário */
+}

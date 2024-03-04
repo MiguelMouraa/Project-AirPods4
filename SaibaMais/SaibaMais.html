@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba Mais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="SaibaMais-section" id="SaibaMais">
+        <h1>Bem-vindo à nossa página para saber mais </h1>
+  </section>
+  <script>
+    window.onload = function() {
+        var homeSection = document.querySelector('.SaibaMais-section');
+        var paragrafo = document.createElement('h1');
+        paragrafo.textContent = 'Saiba Mais';
+        homeSection.appendChild(paragrafo);
+    };
+</script>
+</body>
