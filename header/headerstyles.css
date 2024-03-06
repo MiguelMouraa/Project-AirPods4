@@ -1,0 +1,32 @@
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+
+.sobre-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    
+}
+
+.Serviços-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+
+.Contato-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}

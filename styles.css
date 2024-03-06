@@ -6,6 +6,7 @@ body {
 
 header {
     background-color: #333;
+    flex-direction: row;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -139,7 +140,7 @@ body {
     overflow-y: auto;
 }
 .page2{
-    background-image: url("./assets/images/Page2.png");
+    background-image: url("./assets/images/Page2\ \(1\).png");
     background-size: cover;
     background-position: center;
     text-align: center;
