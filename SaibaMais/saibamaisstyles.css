@@ -1,0 +1,115 @@
+@media screen and (max-width: 768px){
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    width: 1920px;
+    height: 1080px;
+    background-color: #B2B49B;
+    }
+}
+.SaibaMais-section {
+    width: 1342px;
+    height: 2580px;
+    display: flex;
+    position: absolute;
+    padding-top: 3%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    background-color: #B2B49B;
+}
+
+.textbox1 {
+    width: 1200px;
+    height: 140px;
+    display: flex;
+    background-color: aqua;
+    position: absolute;
+    margin-left: 4%;
+    top: 290px;
+    align-items: center;
+    padding: 1%;
+    border: 2px solid #b19f9f;
+    border-radius: 10px; 
+    background-color: lightgray;
+}
+
+.box-container {
+    width: 1280px;
+    height: 832px;
+    display: flex;
+    position: absolute;
+    padding: 2%;
+    top: 500px;
+    border: none;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    border: none;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+    width: 394px;
+    height: 662px;
+    border: none;
+}
+
+li div{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border: none;
+}
+.box1 {
+    background-image: url(./SaibaMaisAssets/images/tarun-savvy-TE6e6mEasCE-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    width: 316px;
+    height: 513px;
+    flex-shrink: 0;
+    border: 2px solid #b19f9f;
+    border-radius: 10px; 
+    background-color: lightgray;
+    border: none;
+}
+
+.box2 {
+    background-image: url(./SaibaMaisAssets/images/giphyairpod.gif);
+    background-size:cover;
+    background-position: center;
+    width: 316px;
+    height: 513px;
+    flex-shrink: 0;
+    border: 2px solid #b19f9f;
+    border-radius: 10px; 
+    background-color: lightgray;
+    border: none;
+}
+
+.box3 {
+    background-image: url(.//SaibaMaisAssets/images/jackson-simmer-iACz8TaDWsI-unsplash\ 1\ \(1\).png);
+    background-size:cover;
+    background-position: center;
+    width: 316px;
+    height: 513px;
+    flex-shrink: 0;
+    border: 2px solid #b19f9f;
+    border-radius: 10px; 
+    background-color: lightgray;
+    border: none;
+}
+
+* {
+    border: none;
+    overflow-wrap: initial;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    overflow-x: hidden;
+}
