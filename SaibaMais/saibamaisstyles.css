@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768vw){
 body {
     display: flex;
     font-family: Arial, sans-serif;
-    width: 1920px;
-    height: 1080px;
+    width: 1920vw;
+    height: 1080vh;
     background-color: #B2B49B;
     }
 }
@@ -25,7 +25,6 @@ body {
     width: 1200px;
     height: 140px;
     display: flex;
-    background-color: aqua;
     position: absolute;
     margin-left: 10%;
     top: 290px;
@@ -58,7 +57,7 @@ body {
     height: 832px;
     display: flex;
     position: absolute;
-    padding: 2%;
+    padding: 5%;
     margin-left: 7%;
     top: 500px;
     border: none;
@@ -85,7 +84,7 @@ li div{
     border: none;
 }
 .box1 {
-    background-image: url(./SaibaMaisAssets/images/tarun-savvy-TE6e6mEasCE-unsplash.jpg);
+    
     background-size:cover;
     background-position: center;
     width: 316px;
@@ -94,34 +93,60 @@ li div{
     border: 2px solid #b19f9f;
     border-radius: 10px; 
     background-color: lightgray;
-    border: none;
+    border: 2px solid #b19f9f;
+    transition: transform 0.3s ease;
+}
+
+.box2 {
+    
+    background-size:cover;
+    background-position: center;
+    width: 316px;
+    height: 513px;
+    flex-shrink: 0;
+    border: 2px solid #b19f9f;
+    border-radius: 10px; 
+    background-color: lightgray;
+    border: 2px solid #b19f9f;
+    transition: transform 0.3s ease;
+}
+
+.box3 {
+    
+    background-size:cover;
+    background-position: center;
+    width: 316px;
+    height: 513px;
+    flex-shrink: 0;
+    border: 2px solid #b19f9f;
+    border-radius: 10px; 
+    background-color: lightgray;
+    border: 2px solid #b19f9f;
+    transition: transform 0.3s ease;
+}
+
+.box1:hover {
+    transform: scale(1.15);
+}
+.box2:hover {
+    transform: scale(1.15);
+}
+.box3:hover {
+    transform: scale(1.15);
+}
+
+.box1 {
+    background-image: url(./SaibaMaisAssets/images/tarun-savvy-TE6e6mEasCE-unsplash.jpg);
 }
 
 .box2 {
     background-image: url(./SaibaMaisAssets/images/giphyairpod.gif);
-    background-size:cover;
-    background-position: center;
-    width: 316px;
-    height: 513px;
-    flex-shrink: 0;
-    border: 2px solid #b19f9f;
-    border-radius: 10px; 
-    background-color: lightgray;
-    border: none;
 }
 
 .box3 {
-    background-image: url(.//SaibaMaisAssets/images/jackson-simmer-iACz8TaDWsI-unsplash\ 1\ \(1\).png);
-    background-size:cover;
-    background-position: center;
-    width: 316px;
-    height: 513px;
-    flex-shrink: 0;
-    border: 2px solid #b19f9f;
-    border-radius: 10px; 
-    background-color: lightgray;
-    border: none;
+    background-image: url(./SaibaMaisAssets/images/jackson-simmer-iACz8TaDWsI-unsplash\ 1\ \(1\).png);
 }
+
 
 * {
     border: none;
