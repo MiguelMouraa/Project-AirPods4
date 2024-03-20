@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="SaibaMais-section" id="SaibaMais">
-        <h1>Bem-vindo à nossa página para saber mais </h1>
+        <h1>Bem-vindo à nossa página </h1>
     </section>
     <div class="textbox1">
         <h1>Explore o design inteligente dos AirPods. Descubra como esses fones de ouvido combinam tecnologia avançada e elegância, criando um acessório essencial para o seu estilo de vida digita</h1>
@@ -21,6 +21,102 @@
         </ul>
     </div>
     <div class="imageBox"></div>
+    <form action="/pagina-processa-dados-do-form" method="post">    
+        <div class="formContainer">    
+            <div class="nome">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome"> 
+            </div>
+            <div class="email">
+                <label for="email">E-mail: </label>
+                <input type="text" id="email"> 
+            </div>
+            <div class="phone">
+                <label for="phone">Telefone: </label>
+                <input type="text" id="phone" maxlength="15"> 
+            </div>
+            <div class="airpods">
+                <label for="airpods">AirPods: </label>
+                <select id="airpods">
+                    <option value="1399">AirPods (2ª geração)</option>
+                    <option value="1899">AirPods (3ª geração)</option>
+                    <option value="2599">AirPods Pro (2ª geração)</option>
+                    <option value="6590">AirPods Max</option>
+                </select>
+            </div>
+            <div class="total">
+                <label for="total">Total: </label>
+                <input type="text" id="total" readonly>
+            </div>
+            <div class="imagemContainer">
+                <div class="imagem">
+                    <img id="imagemSelecionada" src="./SaibaMaisAssets/images/AirPods 2(1).jfif" alt="Imagem selecionada">
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <script>
+        
+        var imagens = {
+            '1399': './SaibaMaisAssets/images/AirPods 2(1).jfif',
+            '1899': './SaibaMaisAssets/images/AirPods 3.jfif',
+            '2599': './SaibaMaisAssets/images/AirPods Pro.jfif',
+            '6590': './SaibaMaisAssets/images/AirPods Max.png'
+            
+        };
+
+        
+        function mudarImagem() {
+            var opcaoSelecionada = document.getElementById('airpods').value; 
+            var imagem = document.getElementById('imagemSelecionada'); 
+           
+            imagem.src = imagens[opcaoSelecionada]; 
+        }
+
+        
+        document.getElementById('airpods').addEventListener('change', function() {
+            mudarImagem(); 
+        });
+
+        
+        mudarImagem();
+    </script>
+    <script>
+        
+        function calcularTotal() {
+            var airpods = document.getElementById('airpods').value; 
+            var total = parseFloat(airpods).toFixed(2); 
+            document.getElementById('total').value = 'R$ ' + total; 
+        }
+
+        
+        document.getElementById('airpods').addEventListener('change', function() {
+            calcularTotal(); 
+        });
+    </script>
+    <script>
+        
+        function formatarTelefone(input) {
+            var valor = input.value.replace(/\D/g, ''); 
+            var ddd = valor.substring(0, 2); 
+            var numero = valor.substring(2); 
+
+            if (valor.length > 5) {
+                
+                input.value = '(' + ddd + ') ' + numero.substring(0, 5) + '-' + numero.substring(5);
+            } else if (valor.length > 2) {
+                
+                input.value = '(' + ddd + ') ' + numero;
+            } else {
+                input.value = '(' + ddd; 
+            }
+        }
+
+        document.getElementById('phone').addEventListener('input', function() {
+            formatarTelefone(this);
+        });
+    </script>
   <script>
     window.onload = function() {
         var homeSection = document.querySelector('.SaibaMais-section');
@@ -28,5 +124,5 @@
         paragrafo.textContent = 'Saiba Mais';
         homeSection.appendChild(paragrafo);
     };
-</script>
+    </script>
 </body>
