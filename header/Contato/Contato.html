@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contatoStyles.css">
+</head>
+<body>
+    <section class="Contato-section" id="Contato">
+        <h1></h1>
+  </section>
+  <form action="/pagina-processa-dados-do-form" method="post">
+        <div class="contatoFormContainer">
+            <div class="contatoNome">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome"> 
+            </div>
+            <div class="contatoEmail">
+                <label for="email">E-mail: </label>
+                <input type="email" id="email"> 
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="contatoMensagem">
+                <label for="text">Mensagem: </label>
+                <textarea placeholder="Digite sua mensagem aqui"></textarea>
+            </div>
+        </div>
+
+  </form>
+  <script>
+    window.onload = function() {
+        var homeSection = document.querySelector('.Contato-section');
+        var paragrafo = document.createElement('h1');
+        paragrafo.textContent = 'CONTATO';
+        homeSection.appendChild(paragrafo);
+    };
+</script>
+</body>

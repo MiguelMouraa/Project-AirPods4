@@ -8,19 +8,19 @@
 </head>
 <body>
     <section class="SaibaMais-section" id="SaibaMais">
-        <h1>Bem-vindo à nossa página </h1>
+        <h1>Bem-vindo à nossa página</h1>
     </section>
     <div class="textbox1">
         <h1>Explore o design inteligente dos AirPods. Descubra como esses fones de ouvido combinam tecnologia avançada e elegância, criando um acessório essencial para o seu estilo de vida digita</h1>
     </div>
     <div class="box-container">
         <ul class="box">
-            <li><div class="box1"></div></li>
-            <li><div class="box2"></div></li>
-            <li><div class="box3"></div></li>
+            <li><div class="box1" onclick="redirecionarEmNovaAba('https://support.apple.com/pt-br/guide/airpods/welcome/web')"></div></li>
+            <li><div class="box2" onclick="redirecionarEmNovaAba('https://www.apple.com/br/airpods-pro/')"></div></li>
+            <li><div class="box3" onclick="redirecionarEmNovaAba('https://support.apple.com/pt-br/HT209082')"></div></li>
         </ul>
     </div>
-    <div class="imageBox"></div>
+    <div class="imageBox" onclick="redirecionarEmNovaAba('https://support.apple.com/pt-br/guide/airpods/devb2c431317/web')"></div>
     <form action="/pagina-processa-dados-do-form" method="post">    
         <div class="formContainer">    
             <div class="nome">
@@ -29,7 +29,8 @@
             </div>
             <div class="email">
                 <label for="email">E-mail: </label>
-                <input type="text" id="email"> 
+                <input type="email" id="email"> 
+                <div id="emailError" class="error"></div>
             </div>
             <div class="phone">
                 <label for="phone">Telefone: </label>
@@ -38,6 +39,7 @@
             <div class="airpods">
                 <label for="airpods">AirPods: </label>
                 <select id="airpods">
+                    <option value="0,00"></option>
                     <option value="1399">AirPods (2ª geração)</option>
                     <option value="1899">AirPods (3ª geração)</option>
                     <option value="2599">AirPods Pro (2ª geração)</option>
@@ -50,15 +52,43 @@
             </div>
             <div class="imagemContainer">
                 <div class="imagem">
-                    <img id="imagemSelecionada" src="./SaibaMaisAssets/images/AirPods 2(1).jfif" alt="Imagem selecionada">
+                    <img id="imagemSelecionada" src="./SaibaMaisAssets/images/AirPods 2(1).jfif" alt="">
                 </div>
             </div>
         </div>
     </form>
+    <script>
+        function redirecionarEmNovaAba(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+    <script>
+    function redirecionarParaSite(url) {
+        window.location.href = url;
+    }
+</script>
+    <script>
+        const form = document.getElementById('form');
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('emailError');
+    
+        form.addEventListener('submit', function(event) {
+            if (!isValidEmail(emailInput.value)) {
+                event.preventDefault();
+                emailError.textContent = 'Por favor, insira um endereço de e-mail válido.';
+            }
+        });
+    
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
     
     <script>
         
         var imagens = {
+            '0,00': '',
             '1399': './SaibaMaisAssets/images/AirPods 2(1).jfif',
             '1899': './SaibaMaisAssets/images/AirPods 3.jfif',
             '2599': './SaibaMaisAssets/images/AirPods Pro.jfif',
@@ -121,7 +151,7 @@
     window.onload = function() {
         var homeSection = document.querySelector('.SaibaMais-section');
         var paragrafo = document.createElement('h1');
-        paragrafo.textContent = 'Saiba Mais';
+        paragrafo.textContent = '';
         homeSection.appendChild(paragrafo);
     };
     </script>

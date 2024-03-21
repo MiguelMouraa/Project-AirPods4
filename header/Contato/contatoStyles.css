@@ -1,0 +1,85 @@
+
+body {
+    width: 100%;
+    height: 1000px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ccccc5, #615f5f, #1e1e1e);
+}
+
+
+.Contato-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Montserrat';    
+}
+
+.contatoFormContainer {
+
+    width: 1000px;
+    height: 500px;
+    margin-left: 24.5%;
+    background-color: #b8b2b2;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    top: 400px;
+}
+
+.contatoNome {
+    margin-left: 30px;
+    position: absolute;
+    top: 20px;
+    font-size: 200%;
+}
+
+.contatoNome input[type="text"] {
+    width: 500px; 
+    height: 25px; 
+    margin-left: 92px;
+    padding: 10px; 
+    font-size: 85%; 
+    background-color: #d0c8c8f2;
+    border-radius: 10px;
+    
+}
+
+.contatoEmail {
+    margin-left: 30px;
+    position: absolute;
+    top: 85px;
+    font-size: 200%;
+}
+.contatoEmail input[type="email"] {
+    width: 500px; 
+    height: 25px; 
+    margin-left: 88px;
+    padding: 10px; 
+    font-size: 85%; 
+    background-color: #d0c8c8f2;
+    border-radius: 10px;
+    
+}
+
+.contatoMensagem {
+    margin-left: 30px;
+    position: absolute;
+    top: 160px;
+    font-size: 200%;
+    display: flex;
+    
+}
+
+
+.contatoMensagem textarea {
+    width: 600px; 
+    height: 290px; 
+    margin-left: 30px;
+    padding: 10px; 
+    font-size: 85%; 
+    background-color: #d0c8c8f2;
+    border-radius: 10px;
+    padding-top:20px;
+    
+}

@@ -18,7 +18,7 @@ body {
     align-items: center;
     font-size: 40px;
     font-family: 'Montserrat';
-    background-color: #3c3c3ace;
+    background: linear-gradient(to bottom, #1e1e1e, #ccccc5, #1e1e1e);
 }
 
 .textbox1 {
@@ -50,7 +50,12 @@ body {
     padding: 1%;
     border: 2px solid #b19f9f;
     border-radius: 10px; 
+    transition: transform 0.3s ease;
     
+}
+
+.imageBox:hover {
+    transform: scale(1.15);
 }
 
 .box-container {
@@ -60,22 +65,26 @@ body {
     position: absolute;
     padding: 5%;
     margin-left: 12.5%;
-    top: 500px;
+    top: 400px;
     border: none;
+    overflow: hidden;
 }
 
 ul {
     display: flex;
     position: absolute;
     border: none;
+    height: 800px;
+    overflow: hidden;
 }
 
 ul li {
     display: inline;
     margin-left: 20px;
     width: 394px;
-    height: 662px;
+    height: 800px;
     border: none;
+    align-items: center;
 }
 
 li div{
@@ -96,6 +105,7 @@ li div{
     background-color: lightgray;
     border: 2px solid #b19f9f;
     transition: transform 0.3s ease;
+    top: 100px;
 }
 
 .box2 {
@@ -110,6 +120,7 @@ li div{
     background-color: lightgray;
     border: 2px solid #b19f9f;
     transition: transform 0.3s ease;
+    top: 100px;
 }
 
 .box3 {
@@ -124,6 +135,7 @@ li div{
     background-color: lightgray;
     border: 2px solid #b19f9f;
     transition: transform 0.3s ease;
+    top: 100px;
 }
 
 .box1:hover {
@@ -195,7 +207,7 @@ li div{
     font-size: 200%;
 
 }
-.email input[type="text"] {
+.email input[type="email"] {
     width: 500px; 
     height: 25px; 
     margin-left: 30px;
