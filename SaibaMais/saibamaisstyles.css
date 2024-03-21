@@ -8,7 +8,7 @@ body {
     }
 }
 .SaibaMais-section {
-    width: 1518px;
+    width: 100%;
     height: 2580px;
     display: flex;
     position: absolute;
@@ -28,7 +28,7 @@ body {
     position: absolute;
     margin-left: 10%;
     top: 290px;
-    margin-left: 10%;
+    margin-left: 18%;
     text-align: center;
     align-items: center;
     padding: 1%;
@@ -45,7 +45,7 @@ body {
     height: 240px;
     display: flex;
     position: absolute;
-    margin-left: 15%;
+    margin-left: 22.3%;
     top: 1200px;
     padding: 1%;
     border: 2px solid #b19f9f;
@@ -59,7 +59,7 @@ body {
     display: flex;
     position: absolute;
     padding: 5%;
-    margin-left: 4%;
+    margin-left: 12.5%;
     top: 500px;
     border: none;
 }
@@ -162,12 +162,12 @@ li div{
 
     width: 1000px;
     height: 400px;
-    margin-left: 18%;
+    margin-left: 24.5%;
     background-color: #b8b2b2;
     border-radius: 10px;
     position: absolute;
     overflow: hidden;
-    top: 2000px;
+    top: 1600px;
 }
 
 .nome {
@@ -271,18 +271,18 @@ li div{
 }
 
 .imagem {
-    /* Defina a largura e altura da imagem como 100% para preencher todo o espaço dentro do container */
+   
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* Outros estilos da imagem */
+    
 }
 
-/* Ajuste o estilo da imagem conforme necessário */
+
 .imagem img {
-    /* Se você precisar ajustar estilos específicos da tag img dentro da classe .imagem */
+    
     width: 65%;
     height: 100%;
     margin-left: -3%;
-    object-fit: cover; /* Para preencher todo o espaço disponível, cortando a imagem se necessário */
+    object-fit: cover; 
 }
