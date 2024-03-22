@@ -56,6 +56,7 @@ body {
 
 .imageBox:hover {
     transform: scale(1.15);
+    border: 2px solid #ffffff;
 }
 
 .box-container {
@@ -140,12 +141,15 @@ li div{
 
 .box1:hover {
     transform: scale(1.15);
+    border: 2px solid #ffffff;
 }
 .box2:hover {
     transform: scale(1.15);
+    border: 2px solid #ffffff;
 }
 .box3:hover {
     transform: scale(1.15);
+    border: 2px solid #ffffff;
 }
 
 .box1 {
@@ -176,10 +180,16 @@ li div{
     height: 400px;
     margin-left: 24.5%;
     background-color: #b8b2b2;
-    border-radius: 10px;
+    border-radius: 10px ;
     position: absolute;
     overflow: hidden;
     top: 1600px;
+    transition: transform 0.3s ease;
+}
+
+.formContainer:hover {
+    transform: scale(1.00);
+    border: 2px solid #ffffff;
 }
 
 .nome {
